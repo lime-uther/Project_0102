@@ -11,7 +11,11 @@ import 'dotenv/config';
 class Bot extends Client {
   constructor() {
     super({
-      intents: [ GatewayIntentBits.Guilds ]
+      intents: [
+        GatewayIntentBits.Guilds,
+        GatewayIntentBits.GuildMessages,
+        GatewayIntentBits.GuildVoiceStates
+      ]
     });
   }
 
