@@ -5,7 +5,12 @@
     "target": "ES2022",
     "sourceMap": true,
     "outDir": "dist",
-    "rootDir": "src"
+    "rootDir": "src",
+    "strict": true
   },
-  "include": ["src/**/*"]
+  "rules": {
+    "@typescript-eslint/semi": ["error", "always"]
+  },
+  "include": ["src/**/*", "types.d.ts"],
+  "exclude": ["node_modules", "dist"]
 }
