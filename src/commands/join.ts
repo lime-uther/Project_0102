@@ -1,5 +1,9 @@
 import { joinVoiceChannel } from '@discordjs/voice';
-import { ChatInputCommandInteraction, GuildMember, VoiceChannel } from 'discord.js'
+import {
+  ChatInputCommandInteraction,
+  GuildMember,
+  VoiceChannel
+} from 'discord.js'
 
 export default {
   name: 'join',

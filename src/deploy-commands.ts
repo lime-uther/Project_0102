@@ -19,7 +19,10 @@ try {
     commands.push({ name: file.name, description: file.description });
   })
 
-  await rest.put(Routes.applicationCommands(process.env.CLIENT_ID), { body: commands });
+  await rest.put(
+    Routes.applicationCommands(process.env.CLIENT_ID),
+    { body: commands }
+  );
 
   console.log('Successfully reloaded application (/) commands.');
 } catch (error) {

@@ -8,6 +8,9 @@ export default {
 
     if (bot.commands.has(interaction.commandName)) {
       bot.commands.get(interaction.commandName).execute(interaction);
+    } else {
+      interaction.reply(`${interaction.commandName} currently does nothing!`)
     }
   }
 }
+
