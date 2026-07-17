@@ -5,7 +5,8 @@ import { dirname, join } from 'path'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = process.env.DATABASE_URL ?? dirname(__filename);
 
-export const greeterDB = new SQLite(join(__dirname, './greeter.db'));
+// compromise
+export const greeterDB = new SQLite(join(__dirname, '../../src/databases/greeter.db'));
 
 export function initDatabase(): void {
 
